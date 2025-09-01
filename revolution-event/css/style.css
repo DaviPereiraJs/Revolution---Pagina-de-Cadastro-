@@ -106,7 +106,7 @@
   transform: scale(1.05);
 }
 
-/* Section Participantes */
+/* Seção Participantes */
 #participantes {
   padding: 60px 0;
   background: linear-gradient(135deg, #6610f2, #0d6efd);
@@ -147,13 +147,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .participants-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 480px) {
   .participants-grid {
     grid-template-columns: 1fr;
@@ -207,7 +205,6 @@
   box-shadow: 0 5px 15px rgba(255,255,255,0.4);
 }
 
-/* Botão */
 .cadastro-info button {
   border-radius: 30px;
   padding: 10px 20px;
@@ -259,7 +256,6 @@
 
 .footer a:hover {
   color: #ffc107;
-  transform: translateX(5px);
 }
 
 .footer-links {
@@ -275,49 +271,36 @@
   text-decoration: none;
 }
 
-.footer-divider {
-  border-top: 1px solid rgba(255,255,255,0.3);
-  margin-top: 20px;
+/* Social links */
+.social-links a {
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
-.footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 10px;
+.social-links a img {
+  width: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+  border-radius: 10px;
 }
 
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: all 0.3s ease;
+.social-links a:hover {
+  transform: translateY(-5px);
 }
 
-.footer .social-links a:hover {
-  transform: scale(1.2);
-  color: #ffc107;
+/* Animações de texto */
+.lift-on-hover {
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.lift-on-hover:hover {
+  transform: translateY(-10px);
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 }
 
-.footer .social-links img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: white;
-  padding: 2px;
-}
-
-/* Footer inferior centralizado */
-.footer-bottom {
-  text-align: center;
-  padding: 15px 0;
-  font-size: 14px;
-  opacity: 0.85;
-  margin-top: 15px;
-}
-
-/* Animação de digitação */
 .typing-text {
   display: inline-block;
   white-space: pre-wrap;
@@ -325,55 +308,10 @@
   border-right: .15em solid #fff;
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-
 @keyframes blink-caret {
   50% { border-color: transparent }
-}
-
-/* Levantar texto ao passar mouse */
-.lift-on-hover {
-  display: inline-block;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
-
-.lift-on-hover:hover {
-  transform: translateY(-10px);
-  text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Responsivo geral */
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 2rem;
-  }
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-  .carousel-caption .btn {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .cadastro-container {
-    flex-direction: column-reverse;
-  }
-  .cadastro-img, .cadastro-info {
-    flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .participants-grid {
-    grid-template-columns: 1fr;
-  }
 }

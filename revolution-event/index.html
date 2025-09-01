@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Evento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS relativo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo_rv-removebg-preview.png" alt="Logo" width="70"></a>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por nome ou email" class="form-control lift-on-hover">
+        <div id="searchResult" class="search-result"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img coorporativo.jpeg" class="d-block w-100" alt="Evento">
+          <div class="carousel-caption">
+            <h1 class="lift-on-hover">Revolution</h1>
+            <p>28/08/2025 Boa Viagem/CE</p>
+            <a href="#cadastro" class="btn btn-primary lift-on-hover" id="btn-cadastro">Cadastre-se</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre o Evento -->
+  <section class="info-section" id="sobre-evento">
+    <div class="container cadastro-container">
+      <div class="cadastro-info">
+        <h2 class="lift-on-hover typing-text">Revolution</h2>
+        <p class="lift-on-hover typing-text">
+          O Evento Corporativo 2025 é uma oportunidade única de reunir profissionais, parceiros e colaboradores em um ambiente dinâmico e inspirador. Durante o encontro, serão realizadas palestras, workshops e atividades de networking, com foco em inovação, desenvolvimento e integração das equipes. O evento acontecerá em Boa Viagem/CE no dia 13/09/2025.
+        </p>
+      </div>
+      <div class="cadastro-img ">
+        <img src="img/img coorporativo.jpeg" alt="Evento">
+      </div>
+    </div>
+  </section>
+
+  <!-- Participantes -->
+  <section id="participantes">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 lift-on-hover">Participantes Cadastrados</h2>
+      <div class="participants-grid"></div>
+    </div>
+  </section>
+
+  <!-- Cadastro -->
+  <section class="info-section" id="cadastro">
+    <div class="container cadastro-container">
+      <div class="cadastro-info">
+        <h2 class="lift-on-hover">Cadastro</h2>
+        <form id="cadastroForm">
+          <div class="mb-3">
+            <label for="nome" class="form-label lift-on-hover">Nome</label>
+            <input type="text" class="form-control lift-on-hover" id="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label lift-on-hover">Email</label>
+            <input type="email" class="form-control lift-on-hover" id="email" placeholder="Seu email" required>
+          </div>
+          <div class="mb-3">
+            <label for="instituicao" class="form-label lift-on-hover">Instituição</label>
+            <input type="text" class="form-control lift-on-hover" id="instituicao" placeholder="Sua instituição" required>
+          </div>
+          <button type="submit" class="btn btn-primary lift-on-hover">Salvar Cadastro</button>
+        </form>
+      </div>
+      <div class="cadastro-img">
+        <img src="img/img coorporativo.jpeg" alt="Evento">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Sobre -->
+        <div class="col-md-3 mb-4 lift-on-hover">
+          <h5 class="footer-title">Sobre o Evento</h5>
+          <p>O Revolution 2025 conecta pessoas, ideias e inovação em um encontro único para profissionais e empresas.</p>
+        </div>
+        <!-- Links Rápidos -->
+        <div class="col-md-3 mb-4 lift-on-hover">
+          <h5 class="footer-title">Links Rápidos</h5>
+          <ul class="footer-links" >
+            <li><a class="lift-on-hover" href="#sobre-evento">Sobre</a></li>
+            <li><a class="lift-on-hover" href="#participantes">Participantes</a></li>
+            <li><a class="lift-on-hover" href="#cadastro">Cadastro</a></li>
+          </ul>
+        </div>
+        <!-- Contato -->
+        <div class="col-md-3 mb-4 lift-on-hover">
+          <h5 class="footer-title">Contato</h5>
+          <p class="lift-on-hover">Email: contato@revolution2025.com</p>
+          <p class="lift-on-hover">Tel: (88) 98152-2318</p>
+          <p><a class="lift-on-hover" href="https://share.google/hz4oalIfpw5kEUVoR" target="_blank">Boa Viagem - CE</a></p>
+        </div>
+        <!-- Redes sociais -->
+        <div class="col-md-3 mb-4 text-center lift-on-hover">
+          <h5 class="footer-title">Siga-nos</h5>
+          <div class="social-links">
+            <a href="#"><img src="img/youtube.jpg" alt="YouTube">YouTube</a>
+            <a href="#"><img src="img/Instagram.jpg" alt="Instagram">Instagram</a>
+            <a href="#"><img src="img/tik tok.jpg" alt="TikTok">TikTok</a>
+            <a href="#"><img src="img/X.jpg" alt="Twitter">Twitter</a>
+            <a href="#"><img src="img/snapchat.jpg" alt="Snapchat">Snapchat</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+      <div class="text-center mt-3 ">
+        <small class="lift-on-hover">© 2025 Revolution Event. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS relativo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
